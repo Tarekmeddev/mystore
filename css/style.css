@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.container{
+    padding:0  15px ;
+    margin: 0 auto;
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+ /* START HEADER STYLING */
+    .header {
+        background-color: #555;
+        padding: 20px 0;
+    }
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-content .logo {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+    .header-content svg {
+        font-size: 20px;
+        transition: .5s;
+    }
+    .header-content svg:hover{
+        transform: scale(1.1);
+        color: aqua;
+    }
+    .header-content .shoping svg {
+        margin-right: 20px;
+    }
+    .header .navbar{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .header .navbar li a {
+        color: #ccc;
+        padding: 15px;
+        text-transform: capitalize;
+    }
+ /* END HEADER STYLING */
+ /* start land STYLING */
+ .land,
+ .two,
+ .three{
+    width: 100%;
+    height: calc(100vh - 130px);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ }
+ .land{
+    background-image: linear-gradient(#00000061,#00000065),url(../images/NIKE\,\ Inc_\ Newsroom_\ Press\ Releases\,\ Product\ Announcements\ and\ Media\ Resources\ -\ NIKE\,\ Inc_.jpg);
+ }
+ .land .container,
+ .two .container,
+ .three .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ } 
+.land .container h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+ /* end land STYLING */
+.blanc{
+    color: #000;
+    text-align: center;
+    padding: 100px 0;
+}
+.two{
+    height:500px;
+    background-image: linear-gradient(#00000061,#00000065),url(../images/téléchargement.png);
+}
+.three{
+    height:500px;
+    background-image: linear-gradient(#00000061,#00000065),url(../images/Al\ Nassr\ retail\ store\ by\ Redesign\ Group\,\ Riyadh\ –\ Saudi\ Arabia.jpg); }
+/* ******** foooter ******************* */
+footer{
+    background-color: #121212;
+    padding: 20px 0 0;
+}
+footer .container .mainbx{
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+}
+
+footer .mainbx .atelier{
+}
+footer .mainbx .box h1{
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+footer .mainbx .box p{
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+footer .mainbx .sections ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .mainbx .sections ul li{
+    padding: 10px 30px ;
+    border: 2px solid #999;
+    margin: 5px;
+    width: fit-content;
+}
+footer .mainbx .sections ul li:hover{
+    border-color: #ebff11;
+    transform: scale(1.05);
+    transition: .5s;
+}
+footer .mainbx .sections ul li a {
+    color: #999;
+    text-transform: capitalize;
+}
+footer .mainbx .sections ul li a:hover {
+    color: #ebff11;
+    transition: .5s;
+}
+footer .contact .form{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .contact .form input{
+    flex: 1;
+    padding:  0 20px;
+}
+footer .contact .form a.btn{
+    display: block;
+    background-color: #1967cd;
+    color: #fff;
+    font-weight: 900;
+    text-transform: capitalize;
+    height:50px;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+.copy{
+    margin-top: 20px;
+    background-color: #333;
+    padding: 15px 0;
+}
+.copy .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copy p{
+    text-transform: capitalize;
+}
+.copy ul{
+    display: flex;
+}
+.copy li{}
+.copy li a {
+    color: #fff;
+    margin: 0 5px;
+}
+.copy li a svg {
+    font-size: 22px;
+}
+@media (max-width:767px) {
+    .copy p{
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .copy ul{
+        order: 1;
+        margin: 10px auto;
+    }
+}
